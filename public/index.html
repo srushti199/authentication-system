@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Signup Buttons</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff99ac;
+      }
+
+      .btn-container {
+        display: flex;
+        gap: 40px;
+      }
+
+      button {
+        padding: 30px 90px;
+        font-size: 32px;
+        border: none;
+        border-radius: 18px;
+        cursor: pointer;
+        background-color: white;
+        color: #ff2e63;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      button:hover {
+        transform: scale(1.08);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="btn-container">
+      <button id="loginBtn">Login</button>
+      <button id="signupBtn">Sign Up</button>
+    </div>
+
+    <script>
+      document.getElementById("loginBtn").addEventListener("click", () => {
+        window.location.href = "login.html";
+      });
+
+      document.getElementById("signupBtn").addEventListener("click", () => {
+        window.location.href = "signup.html";
+      });
+    </script>
+  </body>
+</html>
